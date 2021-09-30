@@ -1,0 +1,22 @@
+name: metrics svg for readme
+on:
+  push:
+    branches:
+      - main
+      - master
+  schedule:
+    # * update everyday
+    - cron:  '0 0 * * *'
+  workflow_dispatch:
+  
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Isometric commit calender
+        uses: lowlighter/metrics@latest
+        with:
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      
