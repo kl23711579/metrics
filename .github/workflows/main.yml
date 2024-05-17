@@ -30,8 +30,8 @@ jobs:
           filename: metrics.plugin.music.playlist.svg
           token: NOT_NEEDED
           plugin_music: yes
-          plugin_provider: spotify
-          plugin_musice_token: ${{ secrets.SPOTIFY_CLIENT_ID }}, ${{ secrets.SPOTIFY_CLIENT_SECRET }}, ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+          plugin_music_provider: spotify
+          plugin_music_token: ${{ secrets.SPOTIFY_CLIENT_ID }}, ${{ secrets.SPOTIFY_CLIENT_SECRET }}, ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
           plugin_music_limit: 7
           plugin_music_mode: top
           plugin_music_top_type: medium
