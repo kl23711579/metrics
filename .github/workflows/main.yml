@@ -17,7 +17,7 @@ jobs:
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.isoclander.svgplugin_music_mode: top
+          filename: metrics.plugin.isoclander.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_isocalendar: yes
